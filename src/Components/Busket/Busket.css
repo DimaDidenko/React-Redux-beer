@@ -1,0 +1,120 @@
+
+.aside {
+    width: 0;
+    height: 0;
+    /* box-shadow: 0.625rem 0 0.625rem 0 rgba(0, 0, 0, 0.15); */
+    position: absolute;
+    top: -55px;
+    right: 0;
+    opacity: 0;
+    transition: 1s;
+    z-index: -10;
+    padding-top: 1.5rem;
+    transition: 1s;
+    transform: translate(50%, -50%); 
+
+
+
+}
+
+.asideShow {
+    opacity: 1;
+    width: 80%;
+    min-height: 100%;
+    z-index: 10;
+    /* top: 100px;
+    right: -50px; */
+    top: 50%; 
+    right: 50%;
+}
+
+.items{
+    overflow: scroll;
+    height: 165px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+    padding: 1.6rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+
+}
+
+.buttonBuy {
+    color: #921e2d;
+    font-weight: 600;
+    font-size: 17px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    /* cursor: pointer; */
+    /* border: 1px solid #c7c7c3; */
+    padding: 0.29411765rem 1.76470588rem;
+    border-radius: 0.352294118rem;
+    /* display: block; */
+    /* width: 87%; */
+    /* text-align: center; */
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* .buttonBuy:hover {
+    background-color: #921e2d;
+    color: #fff;
+    transition: 1.5s;
+} */
+.container{
+    max-width: 500px;
+    position: relative;
+    margin-top: 30%;
+    margin: auto;
+    /* text-align: center; */
+
+    /* z-index: 10; */
+}
+.totalClose {
+    display: flex;
+    /* align-items: center; */
+    width: 100%;
+   position: absolute;
+   top: 0;
+   cursor: pointer;
+    /* justify-content: space-between; */
+}
+.closeBusket {
+    position: absolute;
+    right: 0px;
+    top: -12px;
+    font-size: 40px;
+    color: #921e2d;
+    /* position: absolute;
+    right: 0; */
+    /* position: absolute;
+    right: 0;
+    top: 0; */
+}
+/* .container {
+    max-width: 500px;
+    transition-duration: 3s;
+
+    /* position: relative; */
+    /* display: block; */
+    /* transition: 4s; */
+/* }  */
+
+@media screen and (min-width: 800px) {
+    .container {
+        max-width: 900px;
+        margin: 0;
+    }
+    .items{
+        padding-right: 1.9rem;
+  }
+  .buttonBuy {
+    font-size: 35px;
+    /* width: 100%; */
+  }
+  .items{
+    height: 500px;
+  }
+}

@@ -1,0 +1,17 @@
+.cardCont {
+    /* flex-basis: 21%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* .galleryCont {
+    display: flex;
+} */
+@media(min-width: 768px) {
+    .gallery__body {
+        flex-basis: 85%;
+    }
+}
